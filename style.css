@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+
+}
+
+:root {
+  --clr-primary : #FFC233;
+  --clr-secondary: #FF505F;
+  --ff-primary :'Dela Gothic One', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+    color: white;
+    background: var(--clr-secondary);
+    padding: 15px 40px;
+    font-size: x-large;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: #9f6b70;
+  /* color: bisque; */
+  color: #FFC233;
+  transition: all .5s ease-in-out;
+
+
+
+}
+
+body {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0,0,0,0.6)),
+     url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
+     color: white;
+  background-repeat: no-repeat;
+  background-position:  top;
+}
+
+.container {
+     width: 90vw;
+     display: block;
+     margin: auto;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+/* 
+-----------
+  logo
+-----------
+*/
+ .navbar div img {
+  width: 10rem;
+  cursor: pointer;
+ }
+
+/* 
+-----------
+ middle nav
+-----------
+*/
+.list {
+  display: flex
+}
+
+.list-item {
+  margin: 0 2rem;
+  padding:0.5rem;
+  color: var(--clr-primary);
+  cursor: pointer;
+  border-radius: 2rem;
+
+}
+.list-item:hover {
+  background-color: #FF505F;
+  border-radius: 2rem;
+  transition: all .3s ease-in-out;
+  color: white;
+}
+
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero-heading {
+    text-align: center;
+    font-size: 6rem;
+    padding: 2rem 0rem;
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    margin-top: 2rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: end;
+  padding: 3rem 2rem;
+}
+
+.button-large {
+  font-size: xx-large;
+}
